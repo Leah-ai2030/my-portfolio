@@ -1,0 +1,83 @@
+/*1. Reset default browser spacing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*2. Style the whole page */
+body {
+    font-family:'Segeo UI', Tahoma, Geneva, Verdana, saa-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /*Light gray background */
+    color:#333;/*Dark gray text */
+    padding: 40px 20px;
+}
+/*3. Center the header text */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #666; /* Lighter gray */
+}
+/*4. Make sections look like cards*/
+section {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px; /*Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+h2 {
+    color: #007acc; /* Blue color */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+/*5.Style the skills list */
+ul {
+    list-style-type: none; /*Remove default bullets */
+}
+ul li {
+    background: #eef6fc; /*Light blue background */
+    margin-botttom: 8px;
+    padding: 10px
+    border-radius: 5px;
+    border-left: 4px solid #007acc; /* Blue border on the left */
+}
+/*6. Style  the button */
+#themeBtn {
+    display: block;
+    nargin: 0 auto;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:#333;
+    color: white;
+    border: none;
+    border-radius: 30px; /*Pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s; /*smooth hover effect */
+}
+#themeBtn:hover {
+    background-color: #007acc; /*Turns blue when you hover over it */
+}
+/* DARK MODE STYLES*/
+body.dark-mode {
+    background-color: #121212; /*very dark gray */
+    color: #e0e0e0; /* Light gray text */
+}
+body.dark-mode header h1 {
+    color:#ffffff; /*white heading */
+}
+body.dark-mode ul li {
+    background: #2a2a2a; /*darjer skill boxes */
+    color: #ffffff;
+}
+body.dark-mode #themeBtn {
+    background-color: #ffffff;
+    color: #121212;
+}
